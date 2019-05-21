@@ -1,12 +1,17 @@
-# Accepting Azure Market Place Acknowledgement
+# Terraform Azure CentOS DataScience
 
-To deploy an Azure Data Science Machine you must accept the Market Place Argeement prior.
+## Accepting Azure Market Place Acknowledgement
 
-# Terraform.tfvars File Creation
+To deploy an Azure Data Science Machine you must accept the Market Place Argeement prior. Please follow the see the web reference below on how to accept Market Place images.
 
-Be sure to add a tfvars file in the dev / production folder.  The creation of a production Terraform will utilize a high dollar GPU processor.  I do not recommend this unless you wish to be charged.  Feel free to modify and consume anyway you wish.  I am not responsible for any cost inquired by the use of this terraform deployment to your Azure Subcription.
+https://blogs.technet.microsoft.com/stefan_stranger/2018/03/25/lessons-learned-deploying-azure-marketplace-virtual-machine/
+
+## Terraform.tfvars File Creation
+
+Be sure to add a terraform.tfvars file in the dev / prod folder.  The creation of a production Terraform will utilize a high dollar GPU processor.  I do not recommend this unless you wish to be charged at high dollar.
 
 ```powershell
+# Azure Subscription Configuration
 variable "ARM_SUBSCRIPTION_ID" {
 default = "<Azure Subscription ID>"
 }
